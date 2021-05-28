@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="stle7.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<meta name="viewport" content="Width=device-width,initial-scale=1">
+  <script>
+  function Delete(e){
+    let items=[];
+    JSON.parse(localStorage.getItem('items')).map(data=>{
+      if(data.id!=e.parentElement.parentElement.children[0].textContent){
+      items.push(data);
+      }
+    });
+    localStorage.setItem("items",JSON.stringify(items));
+    window.location.reload();
+  };
+  </script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <h1>My Footwear</h1>
+      <div class="icon">
+        <p class="par">0</p>
+        <i class="fa fa-shopping-cart"></i>
+      </div>
+    </div>
+    <div class="itemtotal">
+      <div class="men1" id="men1">
+        <h1>MEN~</h1>
+        <div class="item">
+          <img class=" " src="images/imagea.jpg" alt="">
+          <div class="iteminfo">
+            <p>Rs <span>2100</span></p>
+          <a class="addtocart bb1"href="#">Add To Cart</a>
+
+          </div>
+        </div>
+
+        <div class="item">
+      <img class=" pic" src="images/image11.jpg" alt="">
+          <div class="iteminfo">
+            <p>Rs <span>1100</span></p>
+            <a class="addtocart bb1"href="#">Add To Cart</a>
+          </div>
+        </div>
+
+        <div class="item">
+      <img class=" pic" src="images/image12.jpg" alt="">
+          <div class="iteminfo">
+            <p>Rs <span>800</span></p>
+            <a class="addtocart bb1"href="#">Add To Cart</a>
+          </div>
+        </div>
+
+        <div class="item">
+        <img class=" pic" src="images/image13.jpg" alt="">
+          <div class="iteminfo">
+            <p>Rs <span>1200</span></p>
+            <a class="addtocart bb1"href="#">Add To Cart</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <img class=" pic" src="images/image14.jpg" alt="">
+          <div class="iteminfo">
+            <p>Rs <span>500</span></p>
+            <a class="addtocart bb1"href="#">Add To Cart</a>
+          </div>
+        </div>
+
+        <div class="item">
+      <img class=" pic" src="images/image15.jpg" alt="">
+          <div class="iteminfo">
+            <p>Rs <span>800</span></p>
+            <a class="addtocart bb1"href="#">Add To Cart</a>
+          </div>
+        </div>
+          </div>
+
+        <div class="women1" id="women1">
+          <h1>WOMEN~</h1>
+          <div class="item">
+            <img class=" " src="images/image18.jpg" alt="">
+            <div class="iteminfo">
+              <p>Rs <span>1000</span></p>
+              <a class="addtocart bb1"href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="item">
+        <img class=" pic" src="images/image19.jpg" alt="">
+            <div class="iteminfo">
+              <p>Rs <span>800</span></p>
+              <a class="addtocart bb1"href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="item">
+        <img class=" pic" src="images/image21.jpg" alt="">
+            <div class="iteminfo">
+              <p>Rs <span>1200</span></p>
+            <a class="addtocart bb1"href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="item">
+          <img class=" pic" src="images/image22.jpg" alt="">
+            <div class="iteminfo">
+              <p>Rs <span>600</span></p>
+              <a class="addtocart bb1"href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class=" pic" src="images/image23.jpg" alt="">
+            <div class="iteminfo">
+              <p>Rs <span>800</span></p>
+              <a class="addtocart bb1"href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="item">
+        <img class=" pic" src="images/image24.jpg" alt="">
+            <div class="iteminfo">
+              <p>Rs <span>900</span></p>
+              <a class="addtocart bb1"href="#">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="kids1" id="kids1">
+            <h1>kIDS~</h1>
+            <div class="item">
+              <img class=" " src="images/imageb.jpg" alt="">
+              <div class="iteminfo">
+                <p>Rs <span>1500</span></p>
+                <a class="addtocart bb1"href="#">Add To Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+          <img class=" pic" src="images/imagec.jpg" alt="">
+              <div class="iteminfo">
+                <p>Rs <span>890</span></p>
+                <a class="addtocart bb1"href="#">Add To Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+          <img class=" pic" src="images/imaged.jpg" alt="">
+              <div class="iteminfo">
+                <p>Rs <span>1200</span></p>
+              <a class="addtocart bb1"href="#">Add To Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+            <img class=" pic" src="images/imagee.jpg" alt="">
+              <div class="iteminfo">
+                <p>Rs <span>900</span></p>
+                <a class="addtocart bb1"href="#">Add To Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <img class=" pic" src="images/imagef.jpg" alt="">
+              <div class="iteminfo">
+                <p>Rs <span>700</span></p>
+                <a class="addtocart bb1"href="#">Add To Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+          <img class=" pic" src="images/imageg.jpg" alt="">
+              <div class="iteminfo">
+                <p>Rs <span>1000</span></p>
+                <a class="addtocart bb1"href="#">Add To Cart</a>
+              </div>
+            </div>
+      </div>
+    </div>
+
+    <div class="cartbox">
+      <div class="cart">
+        <i class="fa fa-close"></i>
+        <h1>CART</h1>
+        <table>
+       <tr>
+         <td></td>
+       </tr>
+        </table>
+        <a class="btn btn-success" href="https://obscure-ocean-95391.herokuapp.com/">PURCHASE</a>
+      </div>
+    </div>
+
+
+    </div>
+    <a class="btn btn-lg btn-success dot3" href="index.html#part6">FOR QUERIES CALL/SEND EMAIL ;)</a>
+
+</div>
+ <script src="app.js">
+ </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
