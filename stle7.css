@@ -9,6 +9,7 @@ html{
   text-shadow: 2px 2px 8px #FF0000;
   color: rgba(0,0,0,.9);
     white-space: nowrap;
+  text-decoration:none;
 }
 .rt{
   margin-left: 15%;
