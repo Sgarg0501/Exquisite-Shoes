@@ -3,7 +3,7 @@ html{
 }
 /* section1 */
 .heading{
-  font-size: 2rem !important;
+  font-size: 2rem;
   font-family: fantasy;
   padding: 0.5%;
   text-shadow: 2px 2px 8px #FF0000;
